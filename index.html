@@ -1,30 +1,52 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanguá Alegre</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Localização de Sanga Alegre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        h1 {
+            color: #006400;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        #map {
+            width: 100%;
+            height: 500px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo a Sanguá Alegre</h1>
-        <p>Descubra mais sobre esse lugar incrível.</p>
-    </header>
+    <h1>Localização de Sanga Alegre</h1>
+    <p>Bem-vindo! Aqui você pode encontrar a localização de Sanga Alegre. Use o mapa abaixo para visualizar a região.</p>
+    <div id="map"></div>
 
-    <section class="sobre">
-        <h2>Onde fica?</h2>
-        <p>Sanguá Alegre é uma pequena comunidade localizada no interior, com belos paisagens e um clima acolhedor.</p>
-    </section>
-
-    <section class="localizacao">
-        <h2>Como Chegar</h2>
-        <p>Para chegar até aqui, basta seguir pela rodovia X até o Km Y...</p>
-    </section>
-
-    <footer>
-        <p>&copy; Sanguá Alegre - para todos</p>
-    </footer>
+    <!-- Script do Google Maps -->
+    <script>
+        function initMap() {
+            // Coordenadas aproximadas de Sanga Alegre
+            const sangaAlegre = { lat: -23.5505, lng: -46.6333 }; // Substitua pelas coordenadas corretas
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 12,
+                center: sangaAlegre,
+            });
+            const marker = new google.maps.Marker({
+                position: sangaAlegre,
+                map: map,
+                title: "Sanga Alegre",
+            });
+        }
+    </script>
+    <!-- API do Google Maps (substitua YOUR_API_KEY pela sua chave de API) -->
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
 </body>
 </html>
