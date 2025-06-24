@@ -1,9 +1,9 @@
 
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Linha Sanga Alegre - Capanema, PR</title>
+    <meta charset="UTF-8">
+    <title>Sanga Alegre - Capanema, Paraná</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,9 +17,6 @@
             padding: 20px;
             text-align: center;
             color: white;
-        }
-        header h1 {
-            margin: 0;
         }
         nav {
             background-color: #333;
@@ -43,55 +40,64 @@
         nav ul li a:hover {
             background-color: #575757;
         }
-        section {
+        main {
             padding: 20px;
-            max-width: 1000px;
-            margin: auto;
         }
-        h2 {
-            color: #4CAF50;
+        section {
+            margin-bottom: 30px;
         }
         footer {
-            background-color: #333;
+            background-color: #4CAF50;
             color: white;
             text-align: center;
             padding: 15px 0;
-            margin-top: 20px;
-        }
-        /* Responsividade para o mapa */
-        .map-container {
+            position: fixed;
             width: 100%;
-            height: 400px;
-            margin-top: 20px;
+            bottom: 0;
         }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: 0;
+        /* Responsividade básica */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 5px 0;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Linha Sanga Alegre</h1>
-        <p>Capanema - Paraná</p>
+        <h1>Sanga Alegre - Capanema, Paraná</h1>
+        <p>Bem-vindo ao site da Linha Sanga Alegre!</p>
     </header>
     <nav>
         <ul>
             <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#localizacao">Localização</a></li>
+            <li><a href="#historia">História</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
-    <section id="sobre">
-        <h2>Sobre a Linha Sanga Alegre</h2>
-        <p>
-            A Linha Sanga Alegre é uma comunidade localizada em Capanema, no estado do Paraná. Aqui você encontra informações sobre nossa região, cultura e pontos de interesse. Nosso objetivo é promover integração e divulgação da nossa localidade.
-        </p>
-    </section>
-    <section id="localizacao">
-        <h2>Localização</h2>
-        <p>Veja abaixo a localização da Linha Sanga Alegre no mapa:</p>
-        <div class="map-container">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564.644583644679!2d-52.05258308493886!3d-24.31992708444839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f7b7b7b7b7b7b
+    <main>
+        <section id="sobre">
+            <h2>Sobre a Linha Sanga Alegre</h2>
+            <p>A Linha Sanga Alegre é uma comunidade localizada em Capanema, Paraná. Conhecida por sua cultura, tradições e belezas naturais, é um lugar especial para quem busca tranquilidade e contato com a natureza.</p>
+        </section>
+        <section id="historia">
+            <h2>História</h2>
+            <p>A história da Sanga Alegre remonta às suas origens como uma comunidade agrícola, com raízes profundas na cultura local e um povo acolhedor que valoriza suas tradições.</p>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Para mais informações, entre em contato conosco:</p>
+            <ul>
+                <li>Telefone: (xx) xxxx-xxxx</li>
+                <li>Email: contato@sangalegre.com</li>
+                <li>Endereço: Linha Sanga Alegre, Capanema - PR</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sanga Alegre - Capanema, Paraná. Todos os direitos reservados.</p>
+    </footer>
+</body>
