@@ -1,46 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanga Alegre - Capanema, PR</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linha Sanga Alegre - Capanema, Paraná</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            color: #333;
+        }
+        .localizacao {
+            margin-top: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-
     <header>
-        <h1>Comunidade de Sanga Alegre</h1>
-        <p>Interior de Capanema, Paraná</p>
+        <h1>Linha Sanga Alegre</h1>
+        <p>Capanema - Paraná</p>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#localizacao">Localização</a>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#localizacao">Localização</a>
-        <a href="#onde">Onde Fica</a>
-    </nav>
-
     <section id="sobre">
-        <h2>Sobre</h2>
-        <p>A Sanga Alegre é uma comunidade rural pacata localizada no interior de Capanema, no sudoeste do Paraná. Conhecida por sua beleza natural e forte presença da agricultura familiar, é um local de convivência simples e acolhedora. Os moradores mantêm viva a cultura local com festas comunitárias e atividades tradicionais.</p>
+        <h2>Sobre a Linha Sanga Alegre</h2>
+        <p>Bem-vindo à Linha Sanga Alegre, uma comunidade localizada em Capanema, Paraná. Aqui você encontra informações sobre nossa região, cultura e pontos de interesse.</p>
     </section>
 
-    <section id="localizacao">
+    <section id="localizacao" class="localizacao">
         <h2>Localização</h2>
-        <p>Sanga Alegre fica aproximadamente 16 km do centro de Capanema, acessível por estradas rurais bem conservadas. A área é cercada por mata nativa, pequenas propriedades rurais e paisagens que destacam a natureza do Paraná.</p>
+        <p>Veja abaixo a localização da Linha Sanga Alegre no mapa:</p>
+        <!-- Google Maps Embed -->
         <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.928247416769!2d-53.73400068502381!3d-25.648000883676594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f16ddf5cb2dcf5%3A0x3c7a11e47c3eec6!2sCapanema%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1718737112345"
-            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564.927583679927!2d-52.05258308493886!3d-24.17464408435186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f7b7b7b7b7b7b7%3A0x1234567890abcdef!2sCapanema%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1697041234567" 
+            allowfullscreen="" 
+            loading="lazy">
         </iframe>
     </section>
 
-    <section id="onde">
-        <h2>Onde Fica?</h2>
-        <p>Sanga Alegre está localizada na zona rural do município de Capanema - PR, cerca de 16 km a oeste da sede urbana, com fácil acesso por vias locais. É um destino ideal para quem busca contato com a natureza e uma vida tranquila no campo.</p>
-    </section>
-
     <footer>
-        <p>&copy; Comunidade de Sanga Alegre.</p>
+        <p>&copy; 2023 Linha Sanga Alegre - Capanema, Paraná</p>
     </footer>
-
 </body>
 </html>
